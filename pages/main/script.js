@@ -290,8 +290,9 @@ document.addEventListener('DOMContentLoaded', main(allPets));
 
 
 const getPets = async () => {
-    const url = '../pets.json'
+    const url = './pets.json'
     const res = await fetch(url)
+
     const pets = await res.json()
 
     main(pets)
@@ -302,7 +303,7 @@ getPets();
 /*
 document.addEventListener('DOMContentLoaded', () => {
    
-    const DATA_FILE = require('../pets.json');
+    const DATA_FILE = require('./pets.json');
     const parseJson = (json) => {
       return JSON.parse(JSON.stringify(json));
     };
