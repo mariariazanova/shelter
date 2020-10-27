@@ -269,12 +269,13 @@ class Slider extends Popup {
 }
 
 // Run
+/*
 const request = new XMLHttpRequest();
 request.open('GET', './pets.json');
 request.onload = () => {console.log(request.response)};
 const pets = request.response;
 main(pets);
-
+*/
 const getCurrentQuantity = () => {
     let quantity = 1
     if (document.body.clientWidth >= 1280) quantity = 3
@@ -293,7 +294,7 @@ const main = (pets) => {
 /*
 document.addEventListener('DOMContentLoaded', main(allPets));
 */
-/*
+
 
 const getPets = async () => {
     
@@ -305,7 +306,7 @@ const getPets = async () => {
 }
 
 getPets();
-*/
+
 
 
 
