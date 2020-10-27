@@ -98,7 +98,7 @@ const pets =
 class Menu {
     constructor() {
         this.body = document.body
-        this.wrapper = изdocument.querySelector("body > header > div") 
+        this.wrapper = document.querySelector("body > header > div") 
         this.headerInner = document.querySelector('.header__wrapper') 
         this.headerMenu = document.querySelector('.menu')
         this.headerBurgerMenu = document.querySelector('.menu2')
