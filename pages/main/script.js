@@ -290,8 +290,8 @@ document.addEventListener('DOMContentLoaded', main(allPets));
 
 
 const getPets = async  => {
-    const url = 'pets.json'
-    const res = await fetch(url)
+    
+    const res = await fetch('pets.json')
 
     const pets = await res.json()
 
