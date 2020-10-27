@@ -2,11 +2,7 @@
 request.open('GET', './pets.json');
 request.onload = () => {console.log(request.response)};
 */
-const request = new XMLHttpRequest();
-request.open('GET', './pets.json');
-request.onload = () => {console.log(request.response)};
-const pets = request.response;
-main(pets);
+
 
 class Menu {
     constructor() {
@@ -273,7 +269,11 @@ class Slider extends Popup {
 }
 
 // Run
-
+const request = new XMLHttpRequest();
+request.open('GET', './pets.json');
+request.onload = () => {console.log(request.response)};
+const pets = request.response;
+main(pets);
 
 const getCurrentQuantity = () => {
     let quantity = 1
