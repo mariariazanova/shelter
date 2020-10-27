@@ -2,6 +2,12 @@
 request.open('GET', './pets.json');
 request.onload = () => {console.log(request.response)};
 */
+const request = new XMLHttpRequest();
+request.open('GET', './pets.json');
+request.onload = () => {console.log(request.response)};
+const pets = request.response;
+main(pets);
+
 class Menu {
     constructor() {
         this.body = document.body
@@ -287,7 +293,7 @@ const main = (pets) => {
 /*
 document.addEventListener('DOMContentLoaded', main(allPets));
 */
-
+/*
 
 const getPets = async () => {
     
@@ -299,6 +305,10 @@ const getPets = async () => {
 }
 
 getPets();
+*/
+
+
+
 
 /*
 document.addEventListener('DOMContentLoaded', () => {
