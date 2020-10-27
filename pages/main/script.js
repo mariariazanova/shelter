@@ -5,7 +5,7 @@ request.onload = () => {console.log(request.response)};
 class Menu {
     constructor() {
         this.body = document.body
-        this.wrapper = document.querySelector("body > header > div") 
+        this.wrapper = изdocument.querySelector("body > header > div") 
         this.headerInner = document.querySelector('.header__wrapper') 
         this.headerMenu = document.querySelector('.menu')
         this.headerBurgerMenu = document.querySelector('.menu2')
@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', main(allPets));
 */
 
 
-const getPets = async () => {
+const getPets = async  => {
     const url = './pets.json'
     const res = await fetch(url)
 
