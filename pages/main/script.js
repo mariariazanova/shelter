@@ -399,7 +399,13 @@ const getPets = async () => {
 getPets();
 */
 
+const getPets = () => {
+ 
 
+    main(pets)
+}
+
+getPets();
 
 
 /*
